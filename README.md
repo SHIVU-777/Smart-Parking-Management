@@ -118,7 +118,5 @@ It highlights how DSA-driven logic can power efficient, data-backed automation s
 Integrated M.Tech – Software Engineering  
 **Vellore Institute of Technology (VIT)**  
 
----
 
-## 🏷️ **GitHub Short Description**
-> A collaborative Smart Parking Management System built using HTML, CSS, and JavaScript, implementing DSA concepts like Queue, Priority Queue (for VIP and Emergency vehicles), Stack, Sorting, Greedy Algorithm, and File Handling for efficient automated slot allocation.
+
