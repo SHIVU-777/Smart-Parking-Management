@@ -4,6 +4,10 @@
 
 ---
 
+## 🌐 Live Demo
+👉 https://smart-parking-system7.netlify.app/
+
+
 ## 📘 **Overview**
 The **Smart Parking Management System** automates vehicle parking using efficient DSA-based logic.  
 It dynamically assigns the nearest available parking slot, manages **normal and VIP/emergency vehicles** through queues and priority queues, records activity logs, and stores all data persistently in the browser — all within a single web page.  
