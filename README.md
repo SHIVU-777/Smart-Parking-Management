@@ -1,87 +1,104 @@
-🚗 Smart Parking Management System
+# 🚗 Smart Parking Management System
 
-A web-based smart parking solution that uses Data Structures and Algorithms (DSA) to efficiently manage vehicle parking with priority handling for VIP and emergency vehicles.
+A **web-based smart parking solution** that uses **Data Structures and Algorithms (DSA)** to efficiently manage vehicle parking with **priority handling** for VIP and emergency vehicles.
 
-🔗 Live Demo: https://smart-parking-system7.netlify.app/
+🔗 **Live Demo:** [https://smart-parking-system7.netlify.app/](https://smart-parking-system7.netlify.app/)
 
-📌 Problem Statement
+---
 
-Traditional parking systems often suffer from inefficient slot allocation, lack of priority handling for emergency vehicles, and poor activity tracking.
+## 📌 Problem Statement
 
-This project addresses these issues by applying core DSA concepts to automate parking allocation, manage waiting vehicles intelligently, and maintain persistent parking records — all within a lightweight, single-page web application.
+Traditional parking systems often suffer from:
 
-💡 Solution Overview
+* Inefficient slot allocation
+* No priority handling for emergency vehicles
+* Poor tracking of parking activity
 
-The system dynamically assigns the nearest available parking slot, manages normal and priority vehicles using queues, and records parking activity in real time.
-All data is stored persistently in the browser using LocalStorage, enabling continuity without a backend server.
+This project addresses these challenges by applying **core DSA concepts** to automate parking allocation, intelligently manage waiting vehicles, and maintain **persistent parking records** — all within a lightweight, **single-page web application**.
 
-This approach demonstrates how DSA-driven logic can be applied to real-world systems such as malls, hospitals, offices, and smart city parking solutions.
+---
 
-⚙️ Key Features
+## 💡 Solution Overview
 
-Automatic parking slot allocation using Sorting + Greedy Algorithm
+The system dynamically assigns the **nearest available parking slot**, manages **normal and priority vehicles** using queues, and records parking activity in real time.
 
-Separate handling for normal and VIP/emergency vehicles
+All data is stored persistently in the browser using **LocalStorage**, enabling continuity **without any backend server**.
 
-Priority Queue ensures urgent vehicles are served first
+This demonstrates how **DSA-driven logic** can be applied to real-world environments such as:
 
-Stack-based activity log for entry and exit tracking
+* Malls
+* Hospitals
+* Office complexes
+* Smart city parking systems
 
-Vehicle lookup using Linear Search
+---
 
-Persistent data storage using LocalStorage
+## ⚙️ Key Features
 
-Clean, responsive, and interactive UI
+* Automatic parking slot allocation using **Sorting + Greedy Algorithm**
+* Separate handling for **normal** and **VIP/emergency** vehicles
+* **Priority Queue** ensures urgent vehicles are served first
+* **Stack-based activity log** for entry and exit tracking
+* Vehicle lookup using **Linear Search**
+* Persistent data storage using **LocalStorage**
+* Clean, responsive, and interactive user interface
 
-🧠 Data Structures & Algorithms Used
-Concept	Industry Use in System
-Queue	Manages normal vehicle waiting line (FIFO)
-Priority Queue	Handles VIP and emergency vehicles
-Stack	Maintains activity logs (LIFO)
-Sorting	Orders available slots by proximity
-Greedy Algorithm	Allocates nearest available slot
-Linear Search	Searches vehicle records
-LocalStorage	Persistent client-side data storage
-🛠️ Technologies Used
+---
 
-HTML5 – Application structure
+## 🧠 Data Structures & Algorithms Used
 
-CSS3 – Styling and responsive layout
+| Concept          | Industry Use in System                     |
+| ---------------- | ------------------------------------------ |
+| Queue            | Manages normal vehicle waiting line (FIFO) |
+| Priority Queue   | Handles VIP and emergency vehicles         |
+| Stack            | Maintains activity logs (LIFO)             |
+| Sorting          | Orders available slots by proximity        |
+| Greedy Algorithm | Allocates nearest available slot           |
+| Linear Search    | Searches vehicle records                   |
+| LocalStorage     | Persistent client-side data storage        |
 
-JavaScript (ES6) – Core logic, DSA implementation, and storage handling
+---
 
-🔄 System Workflow
+## 🛠️ Technologies Used
 
-Vehicle enters the system
+* **HTML5** – Application structure
+* **CSS3** – Styling and responsive layout
+* **JavaScript (ES6)** – Core logic, DSA implementation, and storage handling
 
-Slot availability is checked
+---
 
-If available → nearest slot allocated using sorting + greedy logic
+## 🔄 System Workflow
 
-If full → vehicle added to waiting queue
+1. Vehicle enters the system
+2. Slot availability is checked
+3. If available → nearest slot allocated using sorting + greedy logic
+4. If full → vehicle added to waiting queue
+5. VIP/emergency vehicles enter priority queue
+6. When a slot is freed → highest-priority or earliest waiting vehicle is allocated
+7. All activities logged and stored persistently
 
-VIP/emergency vehicles enter priority queue
+---
 
-When a slot is freed → highest priority or earliest waiting vehicle is allocated
+## 🚀 How to Run the Project
 
-All activities logged and stored persistently
+1. Clone or download the repository
+2. Open `Smart Parking.html` in any modern browser (Chrome recommended)
+3. No server or backend setup required — runs completely offline
 
-🚀 How to Run the Project
+---
 
-Clone or download the repository
+## 🏁 Conclusion
 
-Open Smart Parking.html in any modern browser (Chrome recommended)
+This project demonstrates how **fundamental Data Structures and Algorithms** can be effectively applied to solve **real-world system problems**.
 
-No server or backend setup required — runs fully offline
+By combining **queues, priority queues, stacks, sorting, and greedy algorithms** with modern web technologies, the system delivers a **fair, efficient, and scalable parking management solution** suitable for industry-level applications.
 
-🏁 Conclusion
+---
 
-This project demonstrates how fundamental Data Structures and Algorithms can be effectively applied to solve real-world system problems.
+## 👥 Team
 
-By combining queues, priority queues, stacks, and greedy algorithms with modern web technologies, the system delivers a fair, efficient, and scalable parking management solution suitable for industry-level applications.
-
-👥 Team
-
-Team SmartCoders
+**Team SmartCoders**
 Integrated M.Tech – Software Engineering
 Vellore Institute of Technology (VIT)
+
+---
