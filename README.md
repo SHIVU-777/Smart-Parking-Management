@@ -1,126 +1,87 @@
-# 🚗 Smart Parking Management System
+🚗 Smart Parking Management System
 
-### 🧠 *A collaborative web-based project demonstrating core Data Structures and Algorithms (DSA) concepts for efficient and priority-based vehicle parking management.*
+A web-based smart parking solution that uses Data Structures and Algorithms (DSA) to efficiently manage vehicle parking with priority handling for VIP and emergency vehicles.
 
----
+🔗 Live Demo: https://smart-parking-system7.netlify.app/
 
-## 🌐 Live Demo
-👉 https://smart-parking-system7.netlify.app/
+📌 Problem Statement
 
+Traditional parking systems often suffer from inefficient slot allocation, lack of priority handling for emergency vehicles, and poor activity tracking.
 
-## 📘 **Overview**
-The **Smart Parking Management System** automates vehicle parking using efficient DSA-based logic.  
-It dynamically assigns the nearest available parking slot, manages **normal and VIP/emergency vehicles** through queues and priority queues, records activity logs, and stores all data persistently in the browser — all within a single web page.  
+This project addresses these issues by applying core DSA concepts to automate parking allocation, manage waiting vehicles intelligently, and maintain persistent parking records — all within a lightweight, single-page web application.
 
-Developed as part of the **Integrated M.Tech Software Engineering** program at **Vellore Institute of Technology (VIT)**, this project showcases the real-world application of **Data Structures and Algorithms (DSA)** through modern web technologies.
+💡 Solution Overview
 
----
+The system dynamically assigns the nearest available parking slot, manages normal and priority vehicles using queues, and records parking activity in real time.
+All data is stored persistently in the browser using LocalStorage, enabling continuity without a backend server.
 
-## 👨‍💻 **Team Members**
-| Name | Role | Contribution |
-|------|------|---------------|
-| **Shivanesh** | DSA Integration & JavaScript Logic | Implemented Queue, Stack, Sorting, Priority Queue, and File Handling logic. |
-| **Leela Avinash** | Frontend & UI Design | Designed page layout and improved user experience using CSS. |
-| **Praveenkumar** | Testing & Debugging | Performed functionality testing and logic validation. |
-| **Thushar** | Data Flow & Optimization | Optimized script execution and slot allocation process. |
-| **Dharshan** | Documentation & Presentation | Created report, slides, and maintained overall documentation. |
+This approach demonstrates how DSA-driven logic can be applied to real-world systems such as malls, hospitals, offices, and smart city parking solutions.
 
----
+⚙️ Key Features
 
-## ⚙️ **Key Features**
-✅ Automatic slot allocation using Sorting and Greedy Algorithms  
-✅ Dual queue system for **normal and VIP/emergency vehicles**  
-✅ Priority Queue ensures immediate allocation for urgent cases  
-✅ Real-time activity tracking using Stack (LIFO)  
-✅ Vehicle search using Linear Search  
-✅ Persistent data storage via LocalStorage  
-✅ Clean, interactive, and user-friendly interface  
+Automatic parking slot allocation using Sorting + Greedy Algorithm
 
----
+Separate handling for normal and VIP/emergency vehicles
 
-## 🧩 **DSA Concepts Implemented**
+Priority Queue ensures urgent vehicles are served first
 
-| **Concept** | **Usage in Project** |
-|--------------|----------------------|
-| **Queue / Priority Queue** | Normal vehicles handled using FIFO; **VIP or emergency vehicles** prioritized with a Priority Queue. |
-| **Stack** | Maintains activity logs for vehicle entry and exit (LIFO principle). |
-| **Sorting** | Arranges available slots in ascending order of slot ID. |
-| **Greedy Algorithm** | Instantly selects the nearest available slot for efficiency. |
-| **Linear Search** | Locates a vehicle using its vehicle number. |
-| **File Handling (LocalStorage)** | Stores parking data and logs permanently in the browser. |
+Stack-based activity log for entry and exit tracking
 
----
+Vehicle lookup using Linear Search
 
-## 💻 **Technologies Used**
-- **HTML5** → Page structure and layout  
-- **CSS3** → Styling, color coding, and responsive interface  
-- **JavaScript (ES6)** → Logic, DSA operations, and LocalStorage handling  
+Persistent data storage using LocalStorage
 
----
+Clean, responsive, and interactive UI
 
-## 🧠 **System Workflow**
-1. Vehicle enters → Slot availability checked.  
-2. If available → Allocated using Sorting + Greedy Algorithm.  
-3. If full → Vehicle added to waiting queue.  
-   - **VIP or Emergency Vehicles** added to a **Priority Queue** and served first.  
-4. When a slot is freed → Highest-priority or earliest waiting vehicle is allotted.  
-5. All actions recorded in a Stack-based activity log.  
-6. Data stored persistently using LocalStorage for continuity.  
+🧠 Data Structures & Algorithms Used
+Concept	Industry Use in System
+Queue	Manages normal vehicle waiting line (FIFO)
+Priority Queue	Handles VIP and emergency vehicles
+Stack	Maintains activity logs (LIFO)
+Sorting	Orders available slots by proximity
+Greedy Algorithm	Allocates nearest available slot
+Linear Search	Searches vehicle records
+LocalStorage	Persistent client-side data storage
+🛠️ Technologies Used
 
----
+HTML5 – Application structure
 
-## 🧮 **Example Code Snippets**
+CSS3 – Styling and responsive layout
 
-**Queue + Priority Queue**
-```js
-// Normal queue
-this.waitingQueue.push(vehicle);
-const nextVehicle = this.waitingQueue.shift();
+JavaScript (ES6) – Core logic, DSA implementation, and storage handling
 
-// Priority-based queue (VIP or Emergency)
-this.waitingQueue.sort((a, b) => b.priority - a.priority);
-```
+🔄 System Workflow
 
-**Sorting + Greedy Algorithm**
-```js
-const nearestSlot = available.sort((a, b) => a.id - b.id)[0];
-```
+Vehicle enters the system
 
-**File Handling (LocalStorage)**
-```js
-localStorage.setItem('parkingData', JSON.stringify(this.slots));
-const data = JSON.parse(localStorage.getItem('parkingData'));
-```
+Slot availability is checked
 
----
+If available → nearest slot allocated using sorting + greedy logic
 
-## 🎨 **Interface Highlights**
-- **Color-coded slots:**  
-  🟩 Available | 🟥 Occupied | 🟨 Waiting | ⭐ VIP/Emergency Allocated  
-- **Responsive Layout:** Designed using CSS Grid and Flexbox.  
-- **Dynamic Updates:** JavaScript updates slot status, queue order, and activity log in real time.  
+If full → vehicle added to waiting queue
 
----
+VIP/emergency vehicles enter priority queue
 
-## 🚀 **How to Run**
-1. Clone or download this repository.  
-2. Open the file **`Smart Parking.html`** in any modern browser (Chrome recommended).  
-3. The project runs completely **offline** — no external server setup required.  
+When a slot is freed → highest priority or earliest waiting vehicle is allocated
 
----
+All activities logged and stored persistently
 
-## 🏁 **Conclusion**
-This collaborative project demonstrates the **real-world application of DSA** in solving everyday challenges like parking management.  
-By integrating **Queue, Stack, Sorting, Greedy Algorithm, Linear Search**, and **File Handling**, along with a **Priority Queue for VIP and Emergency vehicles**, the system achieves fairness, speed, and reliability.  
+🚀 How to Run the Project
 
-It highlights how DSA-driven logic can power efficient, data-backed automation systems.  
+Clone or download the repository
 
----
+Open Smart Parking.html in any modern browser (Chrome recommended)
 
-## 👥 **Developed By**
-**Team SmartCoders**  
-Integrated M.Tech – Software Engineering  
-**Vellore Institute of Technology (VIT)**  
+No server or backend setup required — runs fully offline
 
+🏁 Conclusion
 
+This project demonstrates how fundamental Data Structures and Algorithms can be effectively applied to solve real-world system problems.
 
+By combining queues, priority queues, stacks, and greedy algorithms with modern web technologies, the system delivers a fair, efficient, and scalable parking management solution suitable for industry-level applications.
+
+👥 Team
+
+Team SmartCoders
+Integrated M.Tech – Software Engineering
+Vellore Institute of Technology (VIT)
