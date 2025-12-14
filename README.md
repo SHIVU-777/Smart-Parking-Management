@@ -101,6 +101,7 @@ By combining **queues, priority queues, stacks, sorting, and greedy algorithms**
 - Real-time updates using WebSockets
 - Mobile app version
 - IoT sensor integration for real-time slot detection
+---
 
 ## 👥 Team
 
