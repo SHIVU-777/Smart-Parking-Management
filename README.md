@@ -1,5 +1,7 @@
 # 🚗 Smart Parking Management System
 
+Built with a focus on real-world parking systems used in malls, hospitals, and smart city environments.
+
 A **web-based smart parking solution** that uses **Data Structures and Algorithms (DSA)** to efficiently manage vehicle parking with **priority handling** for VIP and emergency vehicles.
 
 🔗 **Live Demo:** [https://smart-parking-system7.netlify.app/](https://smart-parking-system7.netlify.app/)
@@ -94,6 +96,11 @@ This project demonstrates how **fundamental Data Structures and Algorithms** can
 By combining **queues, priority queues, stacks, sorting, and greedy algorithms** with modern web technologies, the system delivers a **fair, efficient, and scalable parking management solution** suitable for industry-level applications.
 
 ---
+## 🔮 Future Enhancements
+- Backend integration with database (MongoDB / PostgreSQL)
+- Real-time updates using WebSockets
+- Mobile app version
+- IoT sensor integration for real-time slot detection
 
 ## 👥 Team
 
